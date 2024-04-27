@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CardViewNegara"
+    android:layout_width="360dp"
+    android:layout_height="120dp"
+    android:layout_marginStart="25dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="20dp"
+    android:clickable="true"
+    app:cardCornerRadius="15dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="374dp"
+        android:layout_height="120dp"
+        android:background="#333"
+        android:backgroundTint="@color/white">
+
+        <ImageView
+            android:id="@+id/Gambar"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/Nama"
+            android:layout_width="183dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@id/Gambar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/Gambar"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
